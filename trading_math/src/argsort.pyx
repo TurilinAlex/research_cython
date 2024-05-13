@@ -6,7 +6,7 @@ from math import log2, ceil
 from libc.string cimport memcpy
 from libc.stdlib cimport malloc, free
 
-from core._cython_typing cimport DFLOATINTTYPE_t, DINTTYPE_t
+from trading_math._cython_typing cimport DFLOATINTTYPE_t, DINTTYPE_t
 
 cpdef void argsort(DFLOATINTTYPE_t[:] value, DINTTYPE_t[:] index_view, int size):
 

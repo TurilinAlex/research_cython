@@ -1,13 +1,14 @@
 # distutils: language=c++
 # cython: boundscheck=False, wraparound=False, nonecheck=False, initializedcheck=False, infer_types=True
 
-
-from core._cython_typing cimport DINTTYPE_t
-from core._numpy_array cimport array_from_ptr
-
-cimport numpy as np
 from libc.stdlib cimport malloc
 from libcpp cimport bool
+
+cimport numpy as np
+
+from trading_math._cython_typing cimport DINTTYPE_t
+from trading_math._numpy_array cimport array_from_ptr
+
 
 cpdef np.ndarray[DINTTYPE_t, ndim=1] extract_min_extremes(
         np.ndarray[DINTTYPE_t, ndim=1] input_array,

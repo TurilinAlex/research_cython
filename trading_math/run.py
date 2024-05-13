@@ -2,10 +2,10 @@ from time import monotonic
 
 import numpy as np
 
-from core import argsort as argsort_c
-from core import diff_between_indexes_min as diff_between_indexes_min_c
-from core import localize_extremes as localize_extremes_c
-from core import select_eps as select_eps_c
+from trading_math import argsort as argsort_c
+from trading_math import diff_between_indexes_min as diff_between_indexes_min_c
+from trading_math import localize_extremes as localize_extremes_c
+from trading_math import select_eps as select_eps_c
 
 np.random.seed(123)
 

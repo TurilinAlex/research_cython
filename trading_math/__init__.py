@@ -1,4 +1,4 @@
-from core.src.extremes import (
+from trading_math.src.extremes import (
     extract_min_extremes,
     extract_max_extremes,
     diff_between_indexes_min,
@@ -6,6 +6,6 @@ from core.src.extremes import (
     select_eps,
     localize_extremes,
 )
-from core.src.argsort import argsort, argsort_reverse
-import core._python_typing
+from trading_math.src.argsort import argsort, argsort_reverse
+import trading_math._python_typing
 

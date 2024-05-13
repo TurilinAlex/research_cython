@@ -10,7 +10,7 @@ ext = cythonize(
     [
         Extension(
             name="trading_math.*",
-            sources=["core/**/*.pyx"],
+            sources=["trading_math/**/*.pyx"],
             language="c++",
             extra_compile_args=[
                 "-std=c++17",

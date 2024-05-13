@@ -1,4 +1,4 @@
-from .._cython_typing cimport DINTTYPE_t
+from trading_math._cython_typing cimport DINTTYPE_t
 cimport numpy as np
 
 cpdef np.ndarray[DINTTYPE_t, ndim=1] extract_min_extremes(
