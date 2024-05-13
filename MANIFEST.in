@@ -1,0 +1,3 @@
+include trading_math/**/*.py
+include trading_math/**/*.pyi
+exclude trading_math/**/*.cpp
