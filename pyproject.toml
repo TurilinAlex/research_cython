@@ -5,14 +5,13 @@ description = ""
 authors = ["turilin <turilin@primatlab.com>"]
 license = "BSD 3-Clause License"
 readme = "README.md"
-include = [
-    "core/**/*.py",
-    "core/**/*.pyi",
-    "README.md",
-    "LICENSE",
-]
-exclude = [
-    "core/**/*.cpp"
+package = [
+    { exclude = "trading_math/**/*.cpp" },
+    { include = "trading_math/**/*.py" },
+    { include = "trading_math/**/*.pyi" },
+    { include = "README.md" },
+    { include = "LICENSE" },
+
 ]
 
 [tool.poetry.dependencies]
