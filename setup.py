@@ -9,7 +9,7 @@ Options.fast_fail = True
 ext = cythonize(
     [
         Extension(
-            name="core.*",
+            name="trading_math.*",
             sources=["core/**/*.pyx"],
             language="c++",
             extra_compile_args=[
